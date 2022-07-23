@@ -1,0 +1,75 @@
+*{
+
+  background: radial-gradient(circle at center , #908e90e3 , #f3f1f3);
+}
+
+
+.App {
+  text-align:-webkit-center;
+ background-color: #0fa245;
+}
+
+
+.App-header {
+  background-color: #d90ec1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Imageuser {
+  border-radius: 10cm;
+  margin-right: 40px;
+}
+
+.borderList {
+  background-color: #9fabaf;
+  width : 500px;
+  height: auto;
+  background: radial-gradient(circle at center , #9902f7e3 , #5d0476);  
+  border :  dotted rgb(84, 84, 234);
+  margin :auto  ;
+  margin-bottom: 50px;
+  padding : 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.CardTittel {
+
+ font-size: 20px;
+  background-color: #da60cc;
+}
+
+.CardTittelDate {
+  font-size: 20px;
+  background-color: #5dc2ee;
+}
+.active {
+  border-left: #d90ec1 solid;
+  background-color: #e41941;
+}
+
+.CardUser {
+  background: radial-gradient(circle at center , #06fa33e3 , #096c97);  
+
+}
