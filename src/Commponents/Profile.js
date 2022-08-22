@@ -11,8 +11,8 @@ const Profile = ({ esme, date, asl, img }) => {
 
     useEffect (()=> {
         if (day == birthday[2] && month== birthday[1]) {
-         axios.put(`https://birthday-c3a46-default-rtdb.asia-southeast1.firebasedatabase.app/person/${asl.key}.json` , {reminder: !asl.reminder , esme , date ,img})
-         
+         axios.put(`https://birthday-c3a46-default-rtdb.asia-southeast1.firebasedatabase.app/person/${asl.key}.json` , {reminder: !asl.reminder , esme , date ,img});
+            alert('  امروز تولد '  +asl.esme + '  عزیز است')
          setAct(true)
         } 
       },[])
@@ -37,7 +37,7 @@ const Profile = ({ esme, date, asl, img }) => {
         <div className="card mb-3 " style={{ minWidth: '450px' }}>
             <div className="row g-0 ">
                 <div className="col-md-4 ">
-                    {/* <ImageUser /> */}
+                    <ImageUser />
                 </div>
                 <div className="col-md-8 ">
                     <div className={`card-body  pt-1 pe-0 ${act ? 'active' : ''}`}>

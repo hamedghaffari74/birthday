@@ -6,7 +6,7 @@
 
 .App {
   text-align:-webkit-center;
- background-color: #0fa245;
+ background-color: #670fa2;
 }
 
 
@@ -37,13 +37,16 @@
 .Imageuser {
   border-radius: 10cm;
   margin-right: 40px;
+  width: 9rem;
+  height: 9rem;
 }
 
 .borderList {
+  
   background-color: #9fabaf;
   width : 500px;
   height: auto;
-  background: radial-gradient(circle at center , #9902f7e3 , #5d0476);  
+  background: radial-gradient(circle at center , #090909e3 , #494849);  
   border :  dotted rgb(84, 84, 234);
   margin :auto  ;
   margin-bottom: 50px;
@@ -72,4 +75,19 @@
 .CardUser {
   background: radial-gradient(circle at center , #06fa33e3 , #096c97);  
 
+}
+.imgHeader{
+  height: 500px;
+  width: 1720px;
+
+}
+.imgContent{
+  width: 30rem;
+  height: 45rem;
+
+}
+.Content{
+  justify-content: center;
+  text-align: center;
+  
 }

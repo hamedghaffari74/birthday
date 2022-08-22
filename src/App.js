@@ -12,6 +12,9 @@ import Context from './Context/Context';
 import appReducer from './appReduser/appReduser'
 import axios from 'axios';
 import ListProfile from './Commponents/ListProfile';
+import Header from './Commponents/Header';
+import Navbar from './Commponents/Navbar';
+import Content from './Commponents/Content';
 
 
 function App(props) {
@@ -21,37 +24,39 @@ function App(props) {
 
   let context = useContext(Context)
 
+
   useEffect(() => {
     axios.get(`https://birthday-b0c8d-default-rtdb.asia-southeast1.firebasedatabase.app/person.json`)
-      .then(response => jasonHandle( response.data))
+      .then(response => jasonHandle(response.data))
       .catch(err => console.log(err))
-    
-  }, [])
 
+  }, []);
 
 
   let jasonHandle = (data) => {
     let person = Object.entries(data).map(([key, value]) => { return { ...value, key } })
-     dispatch({type : 'into' , payload:{person}})
-     
+    dispatch({ type: 'into', payload: { person } })
+
   }
- 
+
   return (
     <Context.Provider value={
       {
         dispatch,
         person: state.person,
         state
-        
+
       }
     }>
-
-      <div className="App borderList mt-5">
-        <FormAdd />
-        <ListProfile />
-   
-      </div>
+      <Navbar />
+      <Header />
+      
+        <Content />
+      
+      
+      
     </Context.Provider>
+
   );
 
 }

@@ -15,7 +15,6 @@ const ListProfile = () => {
 
   return (
     <div>
-      {context.state.person.map((item) => item.map((asl) => <ImageUser asl={asl} key={asl.key} img={asl.img} />))}
 
       {context.state.person.map((item) => item.map((asl) => <Profile asl={asl} key={asl.key} img={asl.img} date={asl.date} esme={asl.esme} />))}
     </div>

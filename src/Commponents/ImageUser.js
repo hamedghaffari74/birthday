@@ -7,12 +7,10 @@ const ImageUser = ({asl ,img}) => {
   
 let context = useContext(Context)
 
- let pic =context.state.person.map(item=> <img key={item.key} src={item.img} alt='photo' height={'auto'} width={'auto'} className='Imageuser'></img>) 
-  console.log(pic);
   return (
     <div>
-   
-     {pic}
+   <img src={Adrian} alt='photo' className='Imageuser'/>
+
     </div>
   )
 }
